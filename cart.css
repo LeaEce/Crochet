@@ -1,0 +1,148 @@
+.cart-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre les sections gauche et droite */
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto; /* Centre le conteneur horizontalement */
+}
+
+.cart-left, .summary-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cart-left {
+    flex: 3; /* Prend plus d'espace */
+    margin-right: 20px; /* Espace entre les sections */
+}
+
+.cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les articles */
+    width: 100%; /* Prend toute la largeur pour centrer correctement */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px; /* Garder une largeur maximale */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.summary-container {
+    flex: 1; /* Prend moins d'espace */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: space-between; /* Espace entre les éléments */
+    text-align: center;
+}
+
+.summary-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Styles pour supprimer */
+
+.remove-form {
+    display: inline;
+}
+
+.remove-button {
+    background-color: rgb(211, 110, 112);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #FFE4E1;
+}
+
+
+/* Styles pour le bouton valider */ 
+
+.validate-button {
+    background-color: rgb(108, 161, 173);
+    color: white;
+    font-size: 1.5em; /* Plus gros */
+    font-weight: bold;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    align-self: center; /* Centre le bouton horizontalement */
+}
+
+.validate-button:hover {
+    background-color: #FFE4E1;
+}
+
+
+/* Styles pour le bouton retour */ 
+
+.back-button {
+    display: inline-block;
+    background-color: rgb(211, 110, 112); /* Couleur rose */
+    color: white;
+    padding: 8px 16px; /* Ajuster la taille du bouton */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em; /* Réduire la taille du texte */
+    text-decoration: none;
+    margin-bottom: 20px; /* Espace entre le bouton et le reste du contenu */
+}
+
+.back-button:hover {
+    background-color: #FFE4E1;
+}
+
+.total-price {
+    font-size: 1.5em; /* Plus gros */
+    color: rgb(211, 110, 112); /* Rose */
+    font-weight: bold;
+}
+
+.cart-button {
+    background-color: white;
+    color: rgb(108, 161, 173);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cart-button:hover {
+    background-color: rgb(90, 135, 146);
+    color: white;
+}

@@ -1,0 +1,407 @@
+/* Styles pour la section des produits */
+.products {
+    width: 75%;
+}
+
+.products h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centrer les produits */
+}
+
+.product-item {
+    width: calc(33.333% - 20px);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Supprimer le soulignement des titres des produits */
+.product-item h3 {
+    text-decoration: none; /* Retire le soulignement */
+    color: rgb(211, 110, 112); /* Assure que la couleur du texte est noir */
+}
+
+/* Supprimer le soulignement des prix des produits */
+.product-item p {
+    text-decoration: none; /* Retire le soulignement */
+    font-weight: bold; /* Rend le prix plus visible */
+    color: rgb(211, 110, 112); /* Assure que la couleur du texte est noir */
+}
+
+/* Optionnel : Ajuster le style des liens pour qu'ils ne soient pas soulignés */
+.product-item a {
+    text-decoration: none; /* Retire le soulignement des liens */
+    color: inherit; /* Garde la couleur du texte par défaut */
+}
+
+/* Assurez-vous que les liens n'ont pas de soulignement au survol */
+.product-item a:hover {
+    text-decoration: none;
+    color: #FFE4E1; /* Changer la couleur au survol si désiré */
+}
+
+/* Styles pour la page produit */
+.product-details {
+    display: flex;
+    gap: 20px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    position: relative;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-info h2 {
+    font-size: 2em; /* Augmenter la taille du titre */
+    margin-top: 0;
+}
+
+.product-info p {
+    margin: 0;
+}
+
+.product-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacer davantage les options */
+    margin-top: 20px;
+}
+
+.product-options label,
+.product-options select,
+.product-options button,
+.product-options input {
+    width: 100%;
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    color: rgb(211, 110, 112); /* Couleur rose */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-info .add-to-cart-button {
+    background-color: rgb(211, 110, 112); /* Couleur rose */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.product-info .add-to-cart-button:hover {
+    background-color: #FFE4E1; /* Changement de couleur au survol */
+}
+
+/* Styles pour les popups */
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(211, 110, 112);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.popup.error {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.popup-enter {
+    opacity: 0;
+}
+
+.popup-leave {
+    opacity: 1;
+}
+
+
+
+/*Couleur */ 
+
+.color-options {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center; /* Centre les boutons horizontalement */
+}
+
+.color-option {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%; /* Assure que les boutons sont ronds */
+    border: 0.125em solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+}
+
+.color-option.corail {
+    background-color: rgb(229, 133, 117);
+}
+
+.color-option.rose {
+    background-color: rgb(244, 208, 196);
+}
+
+.color-option.bleucobalt {
+    background-color: rgb(78, 142, 186);
+}
+
+.color-option.bleucanard {
+    background-color: rgb(24, 97, 86);
+}
+
+.color-option.bordeau {
+    background-color: rgb(119, 21, 60);
+}
+
+.color-option.bleumarine {
+    background-color: rgb(49, 60, 114);
+}
+
+
+
+
+
+.color-option.tjaune {
+    background-color: rgb(244, 215, 110);
+}
+
+.color-option.trosepale {
+    background-color: rgb(234, 200, 214);
+}
+
+.color-option.trose {
+    background-color: rgb(249, 90, 159);
+}
+
+.color-option.trosecorail {
+    background-color: rgb(245, 155, 170);
+}
+
+.color-option.torange {
+    background-color: rgb(246, 157, 100);
+}
+
+.color-option.trouge {
+    background-color: rgb(198, 0, 11);
+}
+
+.color-option.tviolet{
+    background-color: rgb(137, 109, 169);
+}
+
+.color-option.tvioletpale {
+    background-color: rgb(204, 200, 222);
+}
+
+.color-option.tbleuclair {
+    background-color: rgb(185, 216, 224);
+}
+
+.color-option.tbleu {
+    background-color: rgb(90, 109, 175);
+}
+
+.color-option.tmenthe {
+    background-color: rgb(148, 214, 186);
+}
+
+.color-option.tmenthepale {
+    background-color: rgb(185, 222, 183);
+}
+
+.color-option.tvert {
+    background-color: rgb(77, 145, 32);
+}
+.color-option.tvertpale {
+    background-color: rgb(214, 235, 195);
+}
+
+.color-option.tgris {
+    background-color: rgb(173, 181, 185);
+}
+
+.color-option.tcotta {
+    background-color: rgb(213, 115, 87);
+}
+
+.color-option.blanc {
+    background-color: rgb(255,255,255);
+}
+
+.color-option.tnoir {
+    background-color: rgb(1, 0, 0);
+}
+
+
+
+.color-option.mcreme {
+    background-color: rgb(245, 245, 219);
+}
+
+.color-option.meau {
+    background-color: rgb(135, 195, 185);
+}
+
+.color-option.mtaupe {
+    background-color: rgb(158, 145, 129);
+}
+
+
+.color-option.noel {
+    background-color: rgb(158, 145, 129);
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+.color-name {
+    position: absolute;
+    bottom: 100%; /* Positionne le texte au-dessus du bouton */
+    left: 50%;
+    transform: translateX(-50%); /* Centre le texte horizontalement */
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    color: white; /* Couleur du texte */
+    padding: 0.2em;
+    border-radius: 4px;
+    font-size: 0.8em; /* Ajustez la taille du texte si nécessaire */
+    white-space: nowrap; /* Évite le retour à la ligne */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.color-option:hover .color-name {
+    opacity: 1;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .color-option {
+    border: 0.125em solid black; /* Changez la couleur de la bordure pour indiquer la sélection */
+}
+
+
+.dimension-value {
+    color: rgb(211, 110, 112); /* Changez 'pink' à 'rose' si vous utilisez une palette de couleurs spécifique */
+    font-size: 1.2em; /* Ajustez cette valeur pour changer la taille du texte */
+    margin-left: 10px; /* Espace entre le curseur et la valeur affichée */
+    font-weight: bold;
+}
+
+
+
+.product-image-slider {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-image {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image.active {
+    display: block;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px; /* Positionne les boutons en bas */
+    width: auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(211, 110, 112);
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    z-index: 10; /* Assure que les boutons sont au-dessus de l'image */
+}
+
+.prev {
+    left: 50%;
+    transform: translateX(-110%); /* Déplace le bouton vers la gauche du centre */
+}
+
+.next {
+    left: 50%;
+    transform: translateX(10%); /* Déplace le bouton vers la droite du centre */
+}
+
+/*<label for="size">Taille :</label>
+<select name="size" id="size">
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+</select><br>
+<label for="color">Couleur :</label>
+<div class="color-options">
+    <?php
+    // Exemple de couleurs disponibles pour ce produit
+    $available_colors = [
+        'corail' => 'Corail',
+        'rose' => 'Rose',
+        'bleucobalt' => 'Bleu Cobalt',
+        'bleucanard' => 'Bleu Canard',
+        'bordeau' => 'Bordeau',
+        'bleumarine' => 'Bleu Marine'
+    ];
+
+    foreach ($available_colors as $color_value => $color_name) {
+        echo '<input type="radio" name="color" id="color-' . strtolower($color_value) . '" value="' . $color_value . '">';
+        echo '<label for="color-' . strtolower($color_value) . '" class="color-option ' . strtolower($color_value) . '">';
+        echo '<span class="color-name">' . htmlspecialchars($color_name) . '</span>';
+        echo '</label>';
+    }
+    ?>
+</div>*/

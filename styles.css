@@ -1,0 +1,113 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    background-color: rgb(108, 161, 173);
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+
+header {
+    background-color: rgb(108, 161, 173);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    background-color: rgb(215, 226, 228); 
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: flex-start; /* Aligne le contenu en haut */
+}
+
+/* Styles pour la section des filtres */
+.filters {
+    width: 20%;
+    margin-top: 100px; /* Descend les filtres en dessous du premier tiers */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.filters h2 {
+    font-size: 1.2em;
+}
+
+.filters form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacer davantage les filtres */
+}
+
+/* Styles pour le bouton de retour */
+.back-button-container {
+    background-color: #FFE4E1; /* Couleur rose clair */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: rgb(211, 110, 112); /* Couleur rose */
+    color: white;
+    padding: 8px 16px; /* Ajuster la taille du bouton */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em; /* Réduire la taille du texte */
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #FFE4E1;/* Changement de couleur au survol */
+}
+
+
+/* Informations */
+
+.information {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.titre {
+    color: rgb(211, 110, 112);
+}
+
+.etape {
+    margin-top: 20px;
+}
